@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!--1: Signup Form -->
+        <section id="task1">
+            <h2>Signup Form</h2>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <div id="displayData" class="hidden">
+                <h3>Form Data</h3>
+                <p><strong>Name:</strong> <span id="displayName"></span></p>
+                <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                <p><strong>Password:</strong> <span id="displayPassword"></span></p>
+            </div>
+        </section>
+        <br><br><br>
+
+        <!--2:"Read More" Feature -->
+        <section id="task2">
+            <h2> "Read More" Feature</h2>
+            <p class="short-description">
+                This is the short description of the item. It provides a brief overview of the item's details. 
+                <span class="dots">...</span>
+            </p>
+            <p class="full-description">
+                Here is the full detail of the item. This part includes all the information that you want to share
+                about the item. It could be specifications, features, or any other relevant details that the user
+                should know before making a decision.
+            </p>
+            <button class="read-more-btn btn">Read more</button>
+        </section>
+
+        <br><br><br>
+        <!--3: Student Details Form -->
+        <section id="task3">
+            <h2>Student Details Form</h2>
+            <form id="studentForm">
+                <div class="input-group">
+                    <label for="studentName">Name:</label>
+                    <input type="text" id="studentName" name="studentName" required>
+                </div>
+                <div class="input-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="input-group">
+                    <label for="grade">Grade:</label>
+                    <input type="text" id="grade" name="grade" required>
+                </div>
+                <button type="submit" class="btn">Add Student</button>
+            </form>
+
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Grade</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Edit Form for 3 -->
+        <div id="editFormContainer" class="hidden">
+            <h2>Edit Student Details</h2>
+            <form id="editForm">
+                <input type="hidden" id="editIndex">
+                <div class="input-group">
+                    <label for="editName">Name:</label>
+                    <input type="text" id="editName" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="editAge">Age:</label>
+                    <input type="number" id="editAge" name="age" required>
+                </div>
+                <div class="input-group">
+                    <label for="editGrade">Grade:</label>
+                    <input type="text" id="editGrade" name="grade" required>
+                </div>
+                <button type="submit" class="btn">Update Student</button>
+            </form>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
